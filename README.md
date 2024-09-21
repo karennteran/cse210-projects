@@ -1,6 +1,7 @@
 # cse210-ww-student-template
 This is the starter code for students in the worldwide content version of CSE 210.
 My name is: Karenn Teran
+I love to learn programming and which to start working on my field of study already. 
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
