@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("What is your first name? ");
-        String FirstName = Console.ReadLine();
+        String firstName = Console.ReadLine();
         Console.Write("What is your last name? ");
-        String LastName = Console.ReadLine();
+        String lastName = Console.ReadLine();
         Console.WriteLine("");
         Console.WriteLine($"Your name is {lastname}, {firstname} {lastname}.");
 
