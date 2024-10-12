@@ -1,0 +1,1 @@
+10-12-2024 16:25:22|Describe a challenge you faced today and how you overcame it.|My code wast giving any errors but i noticed afterwards there were some misspelled words on my code that was keeping my code from running.

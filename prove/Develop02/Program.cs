@@ -4,8 +4,8 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Journal journal = new Journal();  //Create a new journal
-        PromptGenerator PromptGenerator = new PromptGenerator(); // Prompts generator
+        Journal journal = new Journal();  // Create a new journal
+        PromptGenerator promptGenerator = new PromptGenerator();
         bool isRunning = true;
 
         while (isRunning)
@@ -28,26 +28,27 @@ public class Program
                         _promptText = promptGenerator.GetRandomPrompt()
                     };
                     Console.WriteLine(newEntry._promptText);
-                    newEntry._enrtyText = Console.ReadLine();
+                    newEntry._entryText = Console.ReadLine();
                     journal.AddEntry(newEntry);
                     break;
 
-                case "2": // show all entries
+                case "2": // Show all entries
                     journal.DisplayAll();
                     break;
 
-                case "3": // load entries from file
-                    Console.WriteLine("Enter the name of the file o load");
-                    string loadFile =Console.ReadLine();
+                case "3": // Load entries from file
+                    Console.WriteLine("Enter the name of the file to load:");
+                    string loadFile = Console.ReadLine();
+                    journal.LoadFromFile(loadFile); // Added method call to load entries
                     break;
 
-                case "4": // save file to txt
-                    Console.WriteLine("Enter the name of the file to save");
+                case "4": // Save entries to txt file
+                    Console.WriteLine("Enter the name of the file to save:");
                     string saveFile = Console.ReadLine();
-                    journal.saveToFile(saveFile);
+                    journal.SaveToFile(saveFile);
                     break;
 
-                Case "5": // Quit the program
+                case "5": // Quit the program
                     isRunning = false;
                     Console.WriteLine("Exiting program...");
                     break;
